@@ -1,0 +1,45 @@
+.container {
+   max-width: 95%;
+   margin: 10px auto 20px auto;
+   padding: 10px;
+   background-color: rgb(155, 240, 155);
+}
+.select__head {
+   text-align: center;
+   margin: 10px auto 10px auto;
+}
+.select__pattern {
+   display: flex;
+   flex-direction: column;
+}
+.select__block {
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: row;
+   margin: 0px 0px 4px 0px;
+}
+.select__block select {
+   margin: 0px 10px 0px 0px;
+}
+.checkbox {
+   width: 25px;
+   height: 25px;
+   margin: -1px 5px 0 0;
+}
+.select__block .input__block{
+   display: block;
+}
+.select__block div input{
+   margin: 3px 1px 3px 1px;
+}
+.complete__message__block {
+   width: 98%;
+   display: flex;
+   height: 200px;
+   margin: 0px auto 0px auto;
+}
+
+.complete__message {
+   width: 100%;
+   height: calc(100%-10px);
+}
