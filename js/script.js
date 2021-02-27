@@ -196,6 +196,7 @@ function create__list__pattern (pattern__block,head__list) {
          input__block.removeChild(document.querySelector('.input'));
       }
       create__input(input__block,obj.fill[head__list.options.selectedIndex].fill[pattern__list.options.selectedIndex]);
+      message__construct();
    }
 }
 
