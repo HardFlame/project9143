@@ -252,8 +252,8 @@ function parse__input (head,pattern,block) {
    for (let i = 0, amount = block.querySelectorAll('.input').length; i <= amount; i++) {
       message = message + obj.fill[head].fill[pattern].fill[i];
       if (i != amount) {
-         message = message + block.querySelectorAll('.input')[i].value;
+         message = message + block.querySelectorAll('.input')[i].value.replaceAll('\n','');
       }
    }
-   return message.trim().replaceAll('\n','').replaceAll('&nbsp','').replaceAll('  ',' ').replaceAll('  ',' ').replaceAll('  ',' ').replaceAll('  ',' ');
+   return message.trim().replaceAll('&nbsp','').replaceAll('  ',' ').replaceAll('  ',' ').replaceAll('  ',' ').replaceAll('  ',' ');
 }
