@@ -114,9 +114,9 @@ function create__list__pattern (pattern__block,head__list) {
    pattern__list.onchange = (elem) => {
       elem.currentTarget.setAttribute('V',head__list.options.selectedIndex + ',' + pattern__list.options.selectedIndex)
       for (let i = 0, amount = input__block.childNodes.length; i < amount; i++) {
-         input__block.removeChild(document.querySelector('.input'));
+         elem.path[1].querySelector('.input__block').removeChild(document.querySelector('.input'));
       }
-      create__input(input__block,obj.fill[head__list.options.selectedIndex].fill[pattern__list.options.selectedIndex]);
+      create__input(elem.path[1].querySelector('.input__block'),obj.fill[head__list.options.selectedIndex].fill[pattern__list.options.selectedIndex]);
       message__construct();
    }
 }
